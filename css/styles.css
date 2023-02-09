@@ -193,7 +193,7 @@ img{
     height: 600px;
     margin: 0 auto;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-        url(../images/fone/hero-img.jpg);
+        url(../images/hero-img.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -229,26 +229,21 @@ img{
     font-size: 20px;
     line-height: 1.2;
 }
-.skills-item::before{
-    content: "";
+.skills-item{
     display: block;
+}
+.skills-icon{
+    display: flex;
     height: 112px;
     background-color: var(--portfolio-button-bg-color);
     border-radius: 4px;
-    background-position: center;
-    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
 }
-.antenna::before{ 
-    background-image: url(../images/skills/antenna.svg);
-}
-.clock::before {
-    background-image: url(../images/skills/clock.svg);
-}
-.diagram::before {
-    background-image: url(../images/skills/diagram.svg);
-}
-.astronaut::before {
-    background-image: url(../images/skills/astronaut.svg);
+.skills-icon-symbol{
+    width: 64px;
+    height: 64px;
 }
 
 
@@ -387,8 +382,9 @@ img{
     fill: var(--main-icon-color);
 }
 .customers-item:hover,
-.customers-item:focus{
+.customers-item:focus,{
     border-color: var(--portfolio-button-bg-accent-color);
+    color: var(--portfolio-button-bg-accent-color);
 }
 .customers-icon:hover,
 .customers-icon:focus{
@@ -444,18 +440,21 @@ img{
     background-size:24px;
     background-position: center;
 }
-.instagram{
-    background-image: url(../images/ikons/instagram.svg);
+.footer-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    border: none;
+    justify-content: center;
+    align-items: center;
 }
-.twitter{
-    background-image: url(../images/ikons/twitter.svg);
+
+.footer-icon {
+    width: 24px;
+    height: 24px;
 }
-.facebook{
-    background-image: url(../images/ikons/facebook.svg);
-}
-.linkedin{
-    background-image: url(../images/ikons/linkedin.svg);
-}
+
 .footer-item:hover,
 .footer-item:focus {
     background-color:var(--footer-green);
